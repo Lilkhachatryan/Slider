@@ -1,7 +1,28 @@
-* {box-sizing: border-box}
-body {font-family: Verdana, sans-serif; margin:0}
-.mySlides {display: none}
-img {vertical-align: middle;}
+* {
+  box-sizing: border-box
+}
+
+body {
+  font-family: Verdana, 
+  sans-serif; margin:0
+}
+
+.header {
+  margin: 50px 0;
+  font-size: 24px;
+  text-align: center;
+  text-decoration: underline;
+  font-family: cursive;
+  color: darkgray;
+  font-weight: 900;
+}
+.mySlides { 
+  display: none 
+}
+
+img {
+  vertical-align: middle;
+}
 
 .slideshow-container {
   max-width: 1000px;
@@ -11,25 +32,25 @@ img {vertical-align: middle;}
 
 .prev,
 .next {
-    position: absolute;
-    top: 0;
-    background: rgba(0, 0, 0, 0.05);
-    width: 42px;
-    height: 100%;
-    cursor: pointer
+  position: absolute;
+  top: 0;
+  background: rgba(0, 0, 0, 0.05);
+  width: 42px;
+  height: 100%;
+  cursor: pointer
 }
 
 .prev:hover,
 .next:hover {
-    background: rgba(0, 0, 0, 0.15);
+  background: rgba(0, 0, 0, 0.15);
 }
 
 .prev {
-    left: 0;
+  left: 0;
 }
 
 .next {
-    right: 0;
+  right: 0;
 }
 
 .prev>span, .next>span {
@@ -88,13 +109,13 @@ img {vertical-align: middle;}
 }
 
 .controls {
-    margin:auto;
-    text-align: center;
-    margin-top: 20px;
+  margin:auto;
+  text-align: center;
+  margin-top: 20px;
 }
 
-#pause{
-    background-color: #4CAF50;
+#pause, #pause2{
+    background-color: darkgray;
     box-shadow: 0 4px 2px -2px gray;
     border: none;
     color: white;
@@ -120,4 +141,23 @@ img {vertical-align: middle;}
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
   .prev, .next,.text {font-size: 11px}
+}
+
+
+.controlImgs {
+  cursor: pointer;
+  width: 200px;
+  height: 200px;
+  position: relative;
+  margin: auto;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+  opacity: 0.7;
+}
+.controlImgs>img {
+  width: 200px;
+  height: 200px;
+}
+.activeImg, .controlImgs:hover {
+  opacity: 1;
 }
