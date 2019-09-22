@@ -101,8 +101,13 @@ function slider2() {
   var controlImgs = document.getElementsByClassName("controlImgs");
   
   slideIndex2++;
-  if (slideIndex2 > imgs.length) {slideIndex2 = 1}    
-  if (slideIndex2 < 1) {slideIndex2 = imgs.length} 
+  
+  if (slideIndex2 > imgs.length) {
+    slideIndex2 = 1
+  }    
+  if (slideIndex2 < 1) {
+    slideIndex2 = imgs.length
+  } 
 
   for (let i = 0; i < controlImgs.length; i++) {
     controlImgs[i].className = controlImgs[i].className.replace(" activeImg", "");
